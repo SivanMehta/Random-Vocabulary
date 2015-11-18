@@ -18,7 +18,7 @@ https://github.com/SivanMehta/random-vocab
 <br />
 
 <div class = "container">
-    <p>Take 5 minutes, after that you will be redirected a quiz. If you feel comfortable before that, you can access the quiz at the bottom</p>
+    <p>Take <span id = "countdown">5:00</span>, after that you will be redirected a quiz. If you feel comfortable before that, you can access the quiz at the bottom</p>
     <table class = "highlight">
         <thead>
             <th>Word</th>
@@ -95,8 +95,36 @@ https://github.com/SivanMehta/random-vocab
 
 <script type="text/javascript">
 
-    setTimeout(function()
+    var elapsed = 1000;
+    var time_alloted = 300 * 1000;
+
+    function msToTime(s)
     {
-        window.location = "https://docs.google.com/forms/d/1ywbZPz-fGY8qCF7nAWD0zHgRAwyrA1XCBRwc85LYzgs/viewform?c=0&w=1"
-    }, 3000000);
+
+      function addZ(n)
+      {
+        return (n<10? '0':'') + n;
+      }
+
+      var ms = s % 1000;
+      s = (s - ms) / 1000;
+      var secs = s % 60;
+      s = (s - secs) / 60;
+      var mins = s % 60;
+
+      return mins + ':' + addZ(secs);
+    }
+
+
+    setInterval(function()
+    {
+        $("#countdown").text(msToTime(time_alloted - elapsed));
+        elapsed += 1000;
+
+        if(elapsed > time_alloted)
+        {
+            window.location = "https://docs.google.com/forms/d/1ywbZPz-fGY8qCF7nAWD0zHgRAwyrA1XCBRwc85LYzgs/viewform?c=0&w=1";
+        }
+    }, 1000);
+
 </script>
