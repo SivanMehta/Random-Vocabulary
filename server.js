@@ -9,14 +9,12 @@ app.use(morgan('tiny'));
 
 random_page = function(request, response)
 {
+    var with_pictures = true
     if(Math.random() > .5)
     {
-        response.render("picture", {});
+        with_pictures = false;
     }
-    else
-    {
-        response.render("words", {});
-    }
+    response.render("vocab", {with_pictures: with_pictures});
 }
 
 app.get("*", random_page);
