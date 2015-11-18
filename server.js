@@ -9,22 +9,22 @@ app.use(morgan('tiny'));
 
 random_page = function(request, response)
 {
-    // var with_pictures = true
-    // if(Math.random() > .5)
-    // {
-    //     with_pictures = false;
-    // }
-    // response.render("vocab", {with_pictures: with_pictures});
-
+    var with_pictures = true
     if(Math.random() > .5)
     {
-        // link with picture
-        response.redirect("https://docs.google.com/document/d/1Ybw0klO-uKLbFEMtbRPa98oc2hiYRDQkIzT672OARG0/edit");
+        with_pictures = false;
     }
-    else
-    {
-        response.redirect("https://docs.google.com/document/d/1R6i4OmZTPXCfhNMle0R9jOULbELa2EfhJuaQrDsEPgE/edit");
-    }
+    response.render("vocab", {with_pictures: with_pictures});
+
+    // if(Math.random() > .5)
+    // {
+    //     // link with picture
+    //     response.redirect("https://docs.google.com/document/d/1Ybw0klO-uKLbFEMtbRPa98oc2hiYRDQkIzT672OARG0/edit");
+    // }
+    // else
+    // {
+    //     response.redirect("https://docs.google.com/document/d/1R6i4OmZTPXCfhNMle0R9jOULbELa2EfhJuaQrDsEPgE/edit");
+    // }
 }
 
 app.get("*", random_page);
