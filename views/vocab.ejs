@@ -5,8 +5,8 @@ https://github.com/SivanMehta/random-vocab
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-
 <style type="text/css">
     img
     {
@@ -18,6 +18,7 @@ https://github.com/SivanMehta/random-vocab
 <br />
 
 <div class = "container">
+    <p>Take 5 minutes, after that you will be redirected a quiz. If you feel comfortable before that, you can access the quiz at the bottom</p>
     <table class = "highlight">
         <thead>
             <th>Word</th>
@@ -64,9 +65,9 @@ https://github.com/SivanMehta/random-vocab
                 <% } %>
             </tr>
             <tr>
-                <td>Poney</td><td>Lion</td>
+                <td>Grepping</td><td>Crying</td>
                 <% if(with_pictures) { %>
-                    <td><img src = "https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg"></td>
+                    <td><img src = "http://api.ning.com/files/kV4MbYiv7oQbMxQFRtRLwjY9wpa9yzN231bTm-1un4ST4aPaa234fu1YtvrvngtDXpj7qM0dNDU*Ya8AdqbSL818O9R05lKH/1082040758.jpeg"></td>
                 <% } %>
             </tr>
             <tr>
@@ -90,5 +91,12 @@ https://github.com/SivanMehta/random-vocab
         </tbody>
     </table>
     <a class="waves-effect waves-light btn" href = "https://docs.google.com/forms/d/1ywbZPz-fGY8qCF7nAWD0zHgRAwyrA1XCBRwc85LYzgs/viewform?c=0&w=1"><i class="material-icons left">done</i>Go to Quiz</a>
-
 </div>
+
+<script type="text/javascript">
+
+    setTimeout(function()
+    {
+        window.location = "https://docs.google.com/forms/d/1ywbZPz-fGY8qCF7nAWD0zHgRAwyrA1XCBRwc85LYzgs/viewform?c=0&w=1"
+    }, 3000000);
+</script>
