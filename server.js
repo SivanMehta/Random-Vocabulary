@@ -15,7 +15,7 @@ random_page = function(request, response)
     }
     else
     {
-        response.render("words")
+        response.render("words", {});
     }
 }
 
