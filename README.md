@@ -17,3 +17,20 @@ After being exposed to one of the treatments, the subject will take a quick quiz
 ## Analysis
 
 We will subsequently analyze the results of each group (with or without pictures), hoping to find definitive evidence to either reject, or fail to reject or hypothesis.
+
+## Results
+
+You can see the data in the `results` directory, and the results of a preliminary t-test below:
+
+| Condition | N  | Mean | Variance |
+|-----------|----|------|----------|
+| Without Pictures        | 14 | 5    | 1.076    |
+| With Pictures         | 15 | 5.71 | 0.835    |
+
+| Statistic | Value |
+|-----------|-------|
+| t         | -1.97 |
+| df        | 27    |
+| p-value   | 0.059 |
+
+We *have not* not produced a significant result so far, but may potentially something as we produce more data.
