@@ -50,4 +50,4 @@ $alpha
 [1] 0.2701633
 ```
 
-.27 is pretty atrocious according to the [rule of thumb](https://en.wikipedia.org/wiki/Cronbach%27s_alpha) for Cronbach's Alpha.
+.27 is pretty atrocious according to the [rule of thumb](https://en.wikipedia.org/wiki/Cronbach%27s_alpha#Internal_consistency) for Cronbach's Alpha.
