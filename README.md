@@ -36,3 +36,18 @@ mean of x mean of y
 ```
 
 We *have not* not produced a significant result so far, but may potentially something as we produce more data.
+
+Additionally, likely have a fairly unreliable scale, as we discovered poor internal validity as indicated by the results of `analysis/chronbach.R`
+
+```
+$sample.size
+[1] 28
+
+$number.of.items
+[1] 11
+
+$alpha
+[1] 0.2701633
+```
+
+.27 is pretty atrocious according to the [rule of thumb](https://en.wikipedia.org/wiki/Cronbach%27s_alpha) for Cronbach's Alpha.
