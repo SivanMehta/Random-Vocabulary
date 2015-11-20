@@ -20,17 +20,19 @@ We will subsequently analyze the results of each group (with or without pictures
 
 ## Results
 
-You can see the data in the `results` directory, and the results of a preliminary t-test below:
+You can see the data in the `analysis/results` directory, and the results of a preliminary t-test below:
 
-| Condition | N  | Mean | Variance |
-|-----------|----|------|----------|
-| Without Pictures        | 14 | 5    | 1.076    |
-| With Pictures         | 15 | 5.71 | 0.835    |
+```
+	Welch Two Sample t-test
 
-| Statistic | Value |
-|-----------|-------|
-| t         | -1.97 |
-| df        | 27    |
-| p-value   | 0.059 |
+data:  with_pictures$Score and without_pictures$Score
+t = 1.9328, df = 25.591, p-value = 0.0644
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.04595589  1.47452732
+sample estimates:
+mean of x mean of y 
+ 5.714286  5.000000 
+```
 
 We *have not* not produced a significant result so far, but may potentially something as we produce more data.
