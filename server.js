@@ -15,10 +15,6 @@ words.on("data", function(data)
 {
     vocabulary.push(data);
 });
-words.on("end", function(data)
-{
-    console.log(vocabulary);
-})
 
 random_page = function(request, response)
 {
