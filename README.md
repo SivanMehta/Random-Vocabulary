@@ -20,7 +20,7 @@ We will subsequently analyze the results of each group (with or without pictures
 
 ## Results
 
-You can see the data in the `analysis/results` directory, and the results of a preliminary t-test , according to `analysis/t_test.R` below:
+You can see the data in the `analysis/data` directory, and the results of a preliminary t-test , according to `analysis/t_test.R` below:
 
 ```
 	Welch Two Sample t-test
