@@ -4,7 +4,7 @@ Shoe,Apple,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,Yes
 Shoe,Apple,Crying,Apple,Tree,Running,Book,Cute,Running,Angry,Yes
 Apple,Shoe,Climbing,Telephone,Tree,Running,Book,Cute,Climbing,Angry,No
 Crying,Apple,Shoe,Cute,Telephone,Crying,Tree,Angry,Climbing,Apple,Yes
-Shoe,Angry,Climbing,Telephone,Tree,Cute,Book,Cute,Running,Angry,No
+Shoe,Angry,Climbing,Telephone,Tree,Cute,Book,Cute,Running,Angry,Yes
 Shoe,Apple,Crying,Cute,Tree,Running,Telephone,Climbing,Climbing,Angry,Yes
 Shoe,Apple,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,Yes
 Shoe,Apple,Climbing,Telephone,Tree,Running,Book,Cute,Crying,Angry,Yes
@@ -26,4 +26,6 @@ Climbing,Crying,Running,Running,Book,Climbing,Tree,Cute,Angry,Cute,No
 Shoe,Apple,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,Yes
 Apple,Shoe,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,No
 Shoe,Apple,Crying,Telephone,Tree,Running,Tree,Cute,Climbing,Angry,Yes
+Shoe,Apple,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,Yes
+Climbing,Apple,Crying,Telephone,Tree,Running,Book,Cute,Crying,Angry,No
 Shoe,Apple,Crying,Telephone,Tree,Running,Book,Cute,Climbing,Angry,Yes
