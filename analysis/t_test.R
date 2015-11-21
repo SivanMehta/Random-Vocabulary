@@ -1,5 +1,5 @@
 # read data
-data = read.csv("analysis/results/coded.csv")
+data = read.csv("analysis/data/coded.csv")
 
 # get the two groups
 with_pictures = data[data$Did.you.see.a.picture.of.a.dog.on.your.vocab.list.during.the.5.minute.study.session. == "Yes",]

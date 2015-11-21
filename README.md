@@ -23,16 +23,17 @@ We will subsequently analyze the results of each group (with or without pictures
 You can see the data in the `analysis/data` directory, and the results of a preliminary t-test , according to `analysis/t_test.R` below:
 
 ```
-	Welch Two Sample t-test
+
+    Welch Two Sample t-test
 
 data:  with_pictures$Score and without_pictures$Score
-t = 1.9328, df = 25.591, p-value = 0.0644
+t = 1.706, df = 26.727, p-value = 0.0996
 alternative hypothesis: true difference in means is not equal to 0
 95 percent confidence interval:
- -0.04595589  1.47452732
+ -0.1270545  1.3770545
 sample estimates:
 mean of x mean of y 
- 5.714286  5.000000 
+    5.625     5.000
 ```
 
 We *have not* not produced a significant result so far, but may potentially something as we produce more data.
@@ -41,13 +42,13 @@ Additionally, likely have a fairly unreliable scale, as we discovered poor inter
 
 ```
 $sample.size
-[1] 28
+[1] 30
 
 $number.of.items
 [1] 11
 
 $alpha
-[1] 0.2701633
+[1] 0.2899457
 ```
 
-.27 is pretty atrocious according to the [rule of thumb](https://en.wikipedia.org/wiki/Cronbach%27s_alpha#Internal_consistency) for Cronbach's Alpha.
+.29 is pretty atrocious according to the [rule of thumb](https://en.wikipedia.org/wiki/Cronbach%27s_alpha#Internal_consistency) for Cronbach's Alpha.
