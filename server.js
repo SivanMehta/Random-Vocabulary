@@ -1,11 +1,24 @@
 var morgan = require('morgan');
 var fs = require('fs');
 var express = require('express');
+var csv = require('fast-csv');
 var app = express();
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(morgan('tiny'));
+
+var vocabulary = [];
+
+var words = csv.fromPath("analysis/data/words.csv")
+words.on("data", function(data)
+{
+    vocabulary.push(data);
+});
+words.on("end", function(data)
+{
+    console.log(vocabulary);
+})
 
 random_page = function(request, response)
 {
@@ -14,7 +27,8 @@ random_page = function(request, response)
     {
         with_pictures = false;
     }
-    response.render("vocab", {with_pictures: with_pictures});
+    response.render("vocab", {words: vocabulary,
+                             with_pictures: with_pictures});
 }
 
 app.get("*", random_page);
