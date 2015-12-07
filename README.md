@@ -1,6 +1,6 @@
 # Randomized Vocabulary Teaching
 
-This is a very basic app used to randomize the treatment options for Project 2 for 88-251: Empirical Research Methods.
+This is a very basic app used to randomize the treatment options for [Project 2](https://github.com/SivanMehta/Random-Vocabulary/blob/master/rubric.pdf) for 88-251: Empirical Research Methods.
 
 ## Hypothesis
 
